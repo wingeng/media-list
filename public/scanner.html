@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;
+					     charset=utf-8"/>
+    <title>ISBN Looker</title>
+    
+    <link href="fol.css" rel="stylesheet"/>
+
+  </head>
+
+  <body>
+    <div class="tool-bar">
+      <a href="/scanner.html" class="tool-bar">Scanner</a>
+      <a href="/media-list" class="tool-bar">Media-List</a>
+    </div>
+    
+    <div id="outersection">
+      <form id="find-form">
+	<div id="isbn">
+	  <span>ISBN: </span>
+	  <input type="text" value="" name="isbn" id="isbn-text"/>
+	  <span id="find">
+	    <input type="submit" value="Find"/>
+	  </span>
+	  <span>Special Collections Price Cut Off: </span>
+	  <select name="collections_cutoff">
+	    <option value="5">$5.00</option>
+	    <option value="10">$10.00</option>
+	    <option value="15">$15.00</option>
+	    <option value="20">$20.00</option>
+	    <option value="25">$25.00</option>
+	    <option value="30">$30.00</option>
+	    <option value="35">$35.00</option>
+	    <option value="40" selected="selected">$40.00</option>
+	    <option value="45">$45.00</option>
+	    <option value="50">$50.00</option>
+	    <option value="55">$55.00</option>
+	    <option value="60">$60.00</option>
+	    <option value="65">$65.00</option>
+	    <option value="70">$70.00</option>
+	    <option value="75">$75.00</option>
+	  </select>
+	</div>
+      </form>
+
+      <div id="imageandcontent">
+	<div id="imagesection">
+	  <img src=""/>
+	</div>
+	<div id="contentsection">
+	  <p><span class="output" id="output-title">Not found</span></p>
+	  <p><span class="output" id="output-price"></span></p>
+	  <p></p>
+	  <p><a href="">amazon</a></p>
+	</div>
+      </div>
+    </div>
+  </body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="/scanner.js"></script>
+
+
+
+</html>

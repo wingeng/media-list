@@ -1,0 +1,112 @@
+<html>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link type="text/css" href="media-list.css" rel="stylesheet"/>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <script src="/list-name-edit.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+
+  <style>
+    #error-message {
+    color: red;
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    }
+    .nav .active {
+    background-color: #CECEC8;
+    font-weight:bold;
+    }
+    .tab-pane {
+    margin: 20px;
+    }
+    #simple-list {
+    padding-left: 20px;
+    }
+    #csv-list {
+    padding-left: 20px;
+    }
+    #all-panes {
+    margin: 20px;
+    }
+    .glyphicon-trash {
+    }
+    .tcpl-btn {
+    font-family: monospace;
+    margin-right: 10px;
+    color: #AAAAAA;
+    background-color: #CCF6F8;
+    }
+    .tcpl-checked {
+    color: black;
+    background-color: #CCF6F8;
+    }
+    #tabs {
+    display: block;
+    width: 100%;
+    background-color: #BEBEBE;
+    border-radius: 4px;
+    }
+    .fol-pane {
+    padding-top: 60px;
+    }
+    body {
+    background-color: lightblue;
+    }
+    #tabs li a {
+    color: black;
+    }
+  </style>
+
+  <body id="main">
+
+    <div id="all-panes" class="panel">
+
+	<ul id="tabs" class="nav navbar-nav" role="navigation">
+	  <li>
+            <a href="http://bok-choi.com:3301" >Scanner</a>
+	  </li>
+	  <li>
+            <a href="http://bok-choi.com:4567/media-list.html">Media-List</a>
+	  </li>
+	  <li class="active">
+	    <a href="#list-name-tab" data-toggle="tab">List-Names</a>
+	  </li>
+	</ul>
+
+
+	<div id="list-name-tab" class="tab-pane fol-pane">
+	  <div class="panel">
+	    <div class="warning">
+	      Add or delete list-names here. DO NOT use spaces in names, use
+	      underscores instead, ie "my-list-name", not "my list name".
+	    </div>
+	    <br>
+	    <br>
+	    <div id="users">
+	      <input type="text" value="" name="list-name" id="list-name-text"/>
+	      <input type="submit" value="Add List Name" id = "add-list-name-btn">
+
+	      
+	      <ul class="list" id="list-names-list">
+		<li>
+		  <h3  class="lesser name">mar-31-2014</h3>
+		  <a id="butid" class="flags badge pull-right glyphicon glyphicon-trash" > </a>
+		</li>
+	      </ul>
+	      
+	    </div>
+
+	    <!-- list-name tab -->
+	  </div>
+
+	  <!-- tab-contents -->
+	</div> 
+
+      <!-- End of tabs -->
+    </div>
+
+  </body>
+
+</html>

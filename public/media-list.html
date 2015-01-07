@@ -1,0 +1,185 @@
+<html>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link type="text/css" href="media-list.css" rel="stylesheet"/>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <script src="/media-list.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+  <style>
+    #error-message {
+        color: red;
+	width: 100%;
+	text-align: center;
+	font-size: larger;
+    }
+    .nav .active {
+        background-color: #CECEC8;
+        font-weight:bold;
+    }
+    .tab-pane {
+	margin: 20px;
+    }
+    #simple-list {
+        padding-left: 20px;
+    }
+    #csv-list {
+        padding-left: 20px;
+    }
+    #all-panes {
+	margin: 20px;
+    }
+    .glyphicon-trash {
+    }
+    .tcpl-btn {
+        font-family: monospace;
+        margin-right: 10px;
+        color: #AAAAAA;
+        background-color: #CCF6F8;
+    }
+    .tcpl-checked {
+        color: black;
+        background-color: #CCF6F8;
+    }
+    #tabs {
+	display: block;
+	width: 100%;
+	background-color: #BEBEBE;
+	border-radius: 4px;
+    }
+    .fol-pane {
+        padding-top: 60px;
+    }
+    body {
+	background-color: lightblue;
+    }
+    #tabs li a {
+        color: black;
+    }
+  </style>
+
+<body id="main">
+
+  <div id="all-panes" class="panel">
+
+    <ul id="tabs" class="nav navbar-nav" role="navigation">
+      <li>
+        <a href="http://bok-choi.com:3301" >Scanner</a>
+      </li>
+      <li class="active">
+	<a href="#media-list-tab" data-toggle="tab">Media-List</a>
+      </li>
+      <li>
+        <a href="http://bok-choi.com:4567/list-names.html" >List-Names</a>
+      </li>
+    </ul>
+
+    <div id="content" class="tab-content">
+
+      <div id="scan-tab" class="tab-pane fol-pane">
+	<div id="outersection">
+	  <form id="find-form">
+	    <div id="isbn">
+	      <span>ISBN: </span>
+	      <input type="text" value="" name="isbn" id="isbn-text"/>
+	      <span id="find">
+		<input type="submit" value="Find"/>
+	      </span>
+	      <span>Special Collections Price Cut Off: </span>
+	      <select name="collections_cutoff">
+		<option value="5">$5.00</option>
+		<option value="10">$10.00</option>
+		<option value="15">$15.00</option>
+		<option value="20">$20.00</option>
+		<option value="25">$25.00</option>
+		<option value="30">$30.00</option>
+		<option value="35">$35.00</option>
+		<option value="40" selected="selected">$40.00</option>
+		<option value="45">$45.00</option>
+		<option value="50">$50.00</option>
+		<option value="55">$55.00</option>
+		<option value="60">$60.00</option>
+		<option value="65">$65.00</option>
+		<option value="70">$70.00</option>
+		<option value="75">$75.00</option>
+	      </select>
+	    </div>
+	  </form>
+
+	  <div id="imageandcontent">
+	    <div id="imagesection">
+	      <img src=""/>
+	    </div>
+	    <div id="contentsection">
+	      <p><span class="output" id="output-title">Not found</span></p>
+	      <p><span class="output" id="output-price"></span></p>
+	      <p></p>
+	      <p><a href="">amazon</a></p>
+	    </div>
+	  </div>
+	</div>
+	<!-- Scanner tab -->
+      </div>
+
+      <div id="media-list-tab" class="active tab-pane fol-pane">
+
+	<div class="panel">
+	  <div id="error-message"></div>
+	  <span>ISBN: </span>
+	  <input type="text" value="" name="isbn" id="media-isbn-text"/>
+	  <span id="find">
+	    <input type="submit" value="Add Media"/ id="add-media-btn">
+	  </span>
+
+	  <div id="list-name-tag"> List Name: 
+	    <select class="list-names" id="list-names-id">
+	      <option>all</option>	  
+	    </select>
+	  </div>
+
+	  <a id="tcpl-list" href="/tcpl-list.html?list_name=all">TCPL List</a>
+
+	  <input type="submit"  id="clear-list-btn" class="pull-right" value="Clear List">
+	</div>
+
+	<div id="users">
+	  <button class="sort" column="title" desc="">
+	    Sort by Title
+	  </button>
+	  <button class="sort" column="date_of_publication" desc="">
+	    Sort by Date
+	  </button>
+	  <button class="sort" column="author" desc="">
+	    Sort by Author
+	  </button>
+	  <button class="sort" column="timestamp" desc="">
+	    Sort by Time Entered
+	  </button>
+	  <button class="sort" column="binding" desc="">
+	    Sort by Media Type
+	  </button>
+	  
+	  <ul class="list" id="media-list">
+	    <li>
+              <h3  class="lesser title">Example title</h3>
+	      <a class="flags badge pull-left tcpl-btn tcpl-checked">TCPL</a>
+	      <a id="butid" class="flags badge pull-right glyphicon glyphicon-trash" > </a>
+	      <br>
+	      <div class="lesser author">Binny boo</div>
+              <div class="lesser date">1986</div>
+	    </li>
+	  </ul>
+	  
+	</div>
+	<!-- media-list tab -->
+      </div>
+
+      <!-- tab-contents -->
+    </div> 
+  
+    <!-- End of tabs -->
+  </div>
+  
+</body>
+
+</html>

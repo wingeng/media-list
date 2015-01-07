@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link type="text/css" href="list-test.css" rel="stylesheet"/>
+<meta charset=utf-8 />
+<title>Existing list</title>
+</head>
+<body>
+  <div id="main" class="panel panel-default">
+
+    <div id="users">
+      <input class="search" placeholder="Search" />
+      <button class="sort" data-sort="title">
+	Sort by Title
+      </button>
+      <button class="sort" data-sort="date">
+	Sort by Date
+      </button>
+      <button class="sort" data-sort="author">
+	Sort by Author
+      </button>
+      
+      <ul class="list">
+	<li>
+          <h3  class="lesser title">This is my book with a very long complicated title that spans a lot of lines</h3>
+	  <span class="flags badge pull-right">TCPL</span>
+	  <a href="/dome" class="flags badge pull-right glyphicon glyphicon-trash" > </a>
+	  <br>
+	  <div class="lesser author">Binny boo</div>
+          <div class="lesser date">1986</div>
+	  <div class="lesser isbn">9838349</div>
+
+	</li>
+	<li>
+	  <div class="lesser"> <input type="checkbox" name="abcd"> </div>
+          <h3  class="lesser title">Another great book</h3>
+	  <br>
+	  <div class="lesser author">Jonas Arnklint</div>
+          <div class="lesser date">1985</div>
+	  <div class="lesser isbn">3244234</div>
+	</li>
+	<li>
+          <h3 class="title">Stupendist great book</h3>
+	  <div class="lesser author">Mary Williams</div>
+          <p class="lesser date">1986</p>
+	  <div class="lesser isbn">3924234</div>
+	</li>
+	<li>
+          <h3 class="title">Really another good book</h3>
+          <div class="lesser author">Gustaf Lindqvist</div>
+          <p class="lesser date">1983</p>
+	  <div class="lesser isbn">1324234</div>
+	</li>
+      </ul>
+      
+    </div>
+  </div>
+</body>
+<script src="list.js"></script>
+<script src="list-test.js"></script>
+</html>

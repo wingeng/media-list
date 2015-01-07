@@ -1,0 +1,33 @@
+<html>
+<body>
+
+ <div id="scanner" class="panel">
+
+    <ul id="tabs" class="nav nav-tabs">
+      <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+      <li><a href="#profile" data-toggle="tab">Profile</a></li>
+    </ul>
+
+    <div id="content" class="tab-content">
+      <div id="home" class="tab-pane active">
+        some home text
+      </div>
+      <div id="profile" class="tab-pane">
+        some profile text
+      </div>
+    </div>
+  </div>
+
+</body>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
+
+  <script>
+    $('#tabs a').click(function (e) {
+	    e.preventDefault()
+	    $(this).tab('show')
+    })
+  </script>
+</html>

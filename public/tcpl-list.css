@@ -1,0 +1,118 @@
+
+#error-message {
+    color: red;
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+}
+
+.nav .active {
+    background-color: #DBDBDB;
+    font-weight:bold;
+}
+.tab-pane {
+	margin: 20px;
+}
+#simple-list {
+    padding-left: 20px;
+}
+#all-panes {
+	margin: 20px;
+}
+.glyphicon-trash {
+}
+.tcpl-btn {
+    font-family: monospace;
+    margin-right: 10px;
+    color: #AAAAAA;
+    background-color: #CCF6F8;
+}
+.tcpl-checked {
+    color: black;
+    background-color: #CCF6F8;
+}
+#tabs {
+	display: block;
+	width: 100%;
+	background-color: #BEBEBE;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+body {
+	background-color: lightblue;
+}
+
+#tabs li a {
+    color: black;
+}
+
+.lesser.title {
+    padding-left: 10px;
+}
+
+.lesser.author {
+    display: inline;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.lesser.date {
+    display: inline;
+    padding-left: 10px;
+}
+
+.lesser.isbn {
+    color: #bababa;
+}
+.lesser.binding {
+    color: #999;
+}
+.lesser {
+    display: inline;
+    padding-left: 5px;
+    font-size: medium;
+    padding-top: 1px;
+    margin-top: 1px;
+}
+
+.list {
+    padding: 0px;
+    margin: 0px;
+}
+
+.list > li {
+    padding: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flags {
+    margin-left: 5px;
+}
+
+#main-panel {
+    margin: 10px;
+    padding: 0px;
+    background-color: lightblue;
+}
+
+#sort-panel a {
+    color: black;
+}
+
+#sort-panel {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color:#DBDBDB;
+}
+
+.sort {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#media-list {
+    background-color:#DBDBDB;
+}
+

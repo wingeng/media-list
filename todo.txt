@@ -1,0 +1,13 @@
+clear list by name -- currently it clears everything or just one isbn.
+needs to clear the current list (non-fiction, fiction, etc)
+
+more stuff
+
+Add a simple output option
+
+
+Add spinner when adding media
+
+Hook up scanner
+
+sort by tcpl 

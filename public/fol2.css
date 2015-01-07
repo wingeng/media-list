@@ -1,0 +1,120 @@
+.output {
+  font-size:38px;
+}
+
+body {
+ margin-top: 50px;
+ margin: 30px;
+ background-color: #6E8CB3;
+ background-image: url('new_friends_back.jpg');
+# background-color: #466853;
+# background-color: #72937B;
+}
+
+#outersection {
+ background-color: white;
+ border-color: #FF3300;
+ padding-top: 20px;
+ width: 750px;
+ margin: 10 auto;
+ border-radius: 16px;
+}
+
+#isbn {
+ padding-left: 10px;
+}
+
+
+#contentsection {
+ padding-left: 5px;
+ background-color: #72937B;
+ text-align: left;
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ padding-bottom: 10px;
+}
+
+#output-price {
+  font-size:25px;
+  text-align: right;
+}
+	
+#find {
+  padding-right: 90px;
+  padding-left: 20px;
+  align: right;
+}
+
+#specials {
+  padding: 5px 5px;
+  font-size:35px;
+  text-align: center;
+  text-decoration: blink;
+  color: #ff0000;
+}
+	        
+
+#title {
+  color: black;
+}
+
+#media-list {
+  width: 95%;
+  margin-left: 20px;
+  font-size: larger;
+
+  padding: 10px;
+  padding-bottom: 20px;
+  vertical-align: top;
+}
+
+.title {
+  vertical-align: top;
+
+  padding-left: 10px;
+  padding-bottom: 1px;
+}
+
+#del-button {
+  vertical-align: top;
+  padding: 3px;
+}
+
+.row-odd {
+  background-color: #DCDCDD;
+}
+
+.row-even {
+  background-color: #F2F6FF;
+}
+
+#card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.header {
+  padding-left: 10px;
+}
+
+#header-line {
+  padding-bottom: 4px;
+  border-top-style: dashed;
+  border-width: 1px;
+  text-align: center;
+}
+
+#not-found {
+  color: red;
+  display: inline;
+  alignment: center;
+  text-align: center;
+}
+
+.tool-bar {
+ padding-left: 20px;
+ text-align: right;
+ width: 750px;
+ margin: auto;
+ padding-right: 30px;
+}

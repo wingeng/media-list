@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# This starts the sinatra server for the isbn lookup app
+#
+
+ruby app.rb

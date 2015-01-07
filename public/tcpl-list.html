@@ -1,0 +1,62 @@
+<html>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+  <link type="text/css" href="tcpl-list.css" rel="stylesheet"/>
+  <script src="tcpl-list.js"></script>
+  
+<body id="main">
+
+  <div id="main-panel" class="panel">
+
+    <div align="center"> <h3 id="list-title-id">List: All</h3> </div>
+
+      <ul id="tabs" class="nav navbar-nav" role="navigation">
+	<li class="active">
+	  <a href="#all-tab" data-toggle="tab" media="all" class="limit">All</a>
+	</li>
+	<li>
+	  <a href="#cd-tab" data-toggle="tab" media="cd" class="limit">CD</a>
+	</li>
+	<li>
+	  <a href="#dvd-tab" data-toggle="tab" media="dvd" class="limit">DVD</a>
+	</li>
+	<li>
+	  <a href="#books-tab" data-toggle="tab" media="books" class="limit">Books</a>
+	</li>
+      </ul>
+
+      <div id="sort-panel" class="nav" >
+	<a class="sort" column="title" desc="">
+	  Sort by Title
+	</a>
+	<a class="sort" column="date_of_publication" desc="">
+	  Sort by Date
+	</a>
+	<a class="sort" column="author" desc="">
+	  Sort by Author
+	</a>
+	<a class="sort" column="timestamp" desc="">
+	  Sort by Time Entered
+	</a>
+	<a class="sort" column="binding" desc="">
+	  Sort by Media Type
+	</a>
+	<a class="sort" column="to_tcpl" desc="">
+	  Sort by TCPL
+	</a>
+      </div>
+
+      <ul class="list" id="media-list">
+	<li>
+	  <input type="checkbox"/ class="pull-left">
+	  <h3  class="lesser title">Example title</h3>
+	  <div class="lesser author">Binny boo</div>
+	  <div class="lesser date">1986</div>
+	</li>
+      </ul>
+  </div>
+
+</body>
+</html>
